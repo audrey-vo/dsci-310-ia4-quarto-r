@@ -24,7 +24,7 @@ reports/qmd_example.pdf: results reports/qmd_example.qmd
 	
 docs/qmd_example.html: results reports/qmd_example.qmd
 	mkdir -p docs
-	quarto render reports/qmd_example.qmd --to html --output-dir ../docs
+	cp -r reports/qmd_example.html docs/
 
 # clean
 clean:
